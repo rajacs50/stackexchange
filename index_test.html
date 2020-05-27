@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Flack - Connect Instantly
+{% endblock %}
+
+{% block main %}
+
+<section id="cover" class="min-vh-100">
+    <div id="cover-caption">
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
+                    <h1 class="display-4 py-2">Enter your Username.</h1>
+                    <div class="px-2">
+                        <form id="form" action="/flackchat" method="POST" class="justify-content-center">
+                            <div class="form-group">
+                                <label class="sr-only">Name</label>
+                                <input id="username" type="text" class="form-control" name="username" placeholder="Username">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg">Continue</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
